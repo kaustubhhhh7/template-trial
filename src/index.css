@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxury-bg: #ffffff;
+  --color-luxury-surface: #f9f9fb;
+  --color-luxury-border: #eeeeee;
+  --color-luxury-text-main: #111111;
+  --color-luxury-text-muted: #666666;
+
+  --font-family-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+
+  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  background-color: var(--color-luxury-bg);
+  color: var(--color-luxury-text-main);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-luxury-bg);
+  font-family: var(--font-family-sans);
+}
+
+@utility browser-chrome {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    box-shadow: 10px 0 0 #e5e5e5, 20px 0 0 #e5e5e5;
+    z-index: 10;
+  }
+}
+
+@utility luxury-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: var(--shadow-soft);
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+}
+
+@utility luxury-image-overlay {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  .group:hover & {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
