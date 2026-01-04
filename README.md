@@ -1,60 +1,60 @@
-Core3 Templates
+# Core3 Templates
 
-A curated showcase of scratch-built websites and portfolios, presented as a premium, visual-first template gallery for clients.
+A curated showcase of scratch-built websites and portfolios, presented as a premium visual gallery for clients.
 
-This project acts as a menu-style catalog to quickly explore live websites and team portfolios, all hosted and production-ready.
+This project works like a menu card — allowing clients to quickly browse and open live templates and team portfolios.
 
-🚀 Tech Stack
+---
 
-React (Vite)
+## Tech Stack
 
-TypeScript
+- React (Vite)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Netlify
 
-Tailwind CSS
+---
 
-Framer Motion
+## About the Project
 
-Deployed on Netlify
+Core3 Templates is a visual-first showcase of real, live-hosted projects.
+All templates are built from scratch and displayed in a clean, colorful, agency-grade UI.
 
-✨ What This Project Is
+Designed for:
+- Client demos
+- Template browsing
+- Portfolio presentation
 
-A visual gallery of live website templates
+## Getting Started
 
-Clean, colorful, agency-grade UI
+npm install  
+npm run dev  
 
-Image-first layout inspired by design marketplaces
+Runs locally using the Vite development server.
 
-Built for client demos & presentations
+---
 
-📂 Content Sections
-Website Templates
+## Build for Production
 
-A grid-based showcase of live projects including:
+npm run build  
 
-Business & startup websites
+---
 
-E-commerce templates
+## Live Projects
 
-Government & hackathon portals
+All listed websites are live-hosted and accessible directly from the UI.
 
-Travel, real estate, legal & health platforms
+---
 
-Team Portfolios
+## Purpose
 
-Direct links to individual Core3 team portfolios:
+This repository exists to:
+- Showcase Core3’s work professionally
+- Help clients quickly explore available templates
+- Demonstrate real-world frontend and design expertise
 
-Victorraj
+---
 
-Kaustubh
-
-Piyush
-
-🛠️ Getting Started
-npm install
-npm run dev
-
-
-The app will run locally on the Vite development server.
-
-📦 Build for Production
-npm run build
+© Core3 Templates  
+Crafted from scratch.
